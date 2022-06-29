@@ -1,0 +1,919 @@
+
+.commonStyle {
+    margin-top: 2vw;
+  }
+  
+  
+  
+  .main_Header {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  .main_Header_Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main_Header_Bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+    border-bottom: 3px solid #f0f0f0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+
+  
+  
+  .main_Header_Items {
+    text-decoration: none;
+  }
+  
+  .main_Header_Logo {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    padding: 1vw;
+    text-decoration: none;
+  }
+  
+  .main_Header_Logo_Top {
+    transform: rotate(-90deg);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+  }
+  
+  .main_Header_Logo_Bottom {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 71px;
+    color: black;
+  }
+  
+  .mobile_Menu {
+    display: none;
+  }
+  
+  .main_Mobile_Bottom {
+    display: none;
+  }
+  
+  
+  .featured_Articles_Component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+  }
+  
+  .featured_Articles_Right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7vw;
+  }
+  
+  .featured_Articles_Box_Big {
+    height: 20vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    box-sizing: border-box;
+    padding-bottom: 1vw;
+    border-radius: 10px;
+    margin-top: 0px;
+
+
+  }
+  
+  .featured_Articles_Box_Small {
+    height: 28vh;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    box-sizing: border-box;
+    padding-bottom: 1vw;
+    border-radius: 10px;
+    margin-left: 13px;
+  }
+  
+  .Box_Big_Title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .Box_Category_Date {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .Box_Small_Title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .AllSections_Main {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    margin-top: 2vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    gap: 1vw;
+  }
+  
+  .AllSections_Header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  
+  .AllSections_Header_Line {
+    border: 2px solid blueviolet;
+    width: 26%;
+    margin-left: 0;
+    background-color: blueviolet;
+  }
+  
+  .AllSections_Top {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .AllSections_Bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .AllSections_Card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25vw;
+    text-align: justify;
+    gap: 0.5vw;
+  }
+  
+  .AllSections_Image {
+    height: 15vw;
+    width: 25vw;
+    border-radius: 10px;
+  }
+  
+  .AllSections_Title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #404040;
+  }
+  
+  .AllSections_BlogContent {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+  }
+  
+  .AllSections_CategoryName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #404040;
+  }
+  
+  .AllSections_PublishedDate {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  
+  .loadMore_Btn {
+    background-color: white;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    color: #a2a2a2;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+  }
+  
+  .category1_Bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+  }
+  
+  .category1_Bottom_Left {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .category1_Bottom_Left1 {
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: solid 2px silver;
+    gap: 1vw;
+  }
+  
+  .category1_Title {
+    font-family: Roboto,sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .category1_BlogContent {
+    color: #44444d;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .category1_CategoryName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #404040;
+  }
+  
+  .category1_PublishedDate {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  
+  .category1_Card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55vw;
+    text-align: justify;
+    gap: 0.5vw;
+    border-bottom: solid 2px silver;
+    padding-bottom: 1vw;
+  }
+  
+  .category1_Image {
+    height: 19vw;
+    width: 29vw;
+    border-radius: 10px;
+  }
+  
+  .category2_Card {
+    height: 25vw;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .category2_Title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .category2_NameAndDate {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+  }
+  
+  .category1_Bottom_Right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .advertisement {
+    background-color: rgb(255, 255, 255);
+    height: 63vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/564x/77/4c/77/774c7724ac0a98dfbf6f19d5430ec608.jpg);
+    
+  }
+
+  .topPosts_Main {
+    margin-top: 1vw;
+  }
+  
+  .topPosts_Top {
+    margin-bottom: 2vw;
+  }
+  
+  .topPosts_CardPrimary {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardPrimary_Image {
+    height: 14vw;
+    width: 21vw;
+    border-radius: 10px;
+  }
+  
+  .cardPrimary_Bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .cardPrimary_Bottom2 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 0px;
+    color: #f0f0f0;
+  }
+  
+  .topPosts_CardSecondary {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    border-top: solid 1px silver;
+    padding-top: 1vw;
+  }
+  
+  .cardSecondary_Image {
+    height: 16vw;
+    width: 19vw;
+    border-radius: 10px;
+  }
+  
+  .cardSecondary_Right {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .cardSecondary_Title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .cardSecondary_CategoryName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #404040;
+  }
+  
+  .cardSecondary_PublishedDate {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  
+  .cardSecondary_Right2 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 0px;
+    color: #f0f0f0;
+  }
+  
+  .LatestStories_Card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25vw;
+    text-align: justify;
+    gap: 2vw;
+  }
+  
+  .LatestStories_Bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-bottom: 5vw;
+  }
+  
+  .LatestStories_CardContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+  
+  
+  .CategoryPage_Main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 78%;
+    margin-top: 2vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    gap: 2vw;
+    margin-bottom: 5vw;
+  }
+  
+  .CategoryPage_Left {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  .CategoryPage_Left_Bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  .CategoryPage_CardContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: solid 2px silver;
+    gap: 1vw;
+    padding-top: 1vw;
+  }
+  
+  .CategoryPage_Right {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  
+  .Article_Main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    margin-top: 2vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    gap: 1vw;
+  }
+  
+  .Article_Content {
+    box-sizing: border-box;
+  }
+  
+  .Article_Card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .Article_Card_Top {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  .Article_Card_Top1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .Article_Card_Top2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .Card_Top2_Left {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+  }
+  
+  .Card_Top2_Left2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  .Card_Top2_Right {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vw;
+  }
+  
+  .Article_AuthorName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #404040;
+  }
+  
+  .Article_Card_Middle {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .Article_Image {
+    height: 29vw;
+    width: 38vw;
+    border-radius: 10px;
+  }
+  
+  .Article_Card_Bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  
+  .Article_Card_Bottom1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .Article_Card_Bottom2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    padding: 1vw 0;
+  }
+  
+  .Article_Card_Bottom2B {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  .Article_Related_Content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 5vw;
+  }
+  
+  .Related_Content_Top {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  
+  .Related_Content_Bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    border-top: solid 2px silver;
+    padding-top: 1vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+  }
+  
+  .Related_Content_Card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  
+  .Related_Content_Image {
+    height: 15vw;
+    width: 24vw;
+    border-radius: 10px;
+  }
+  
+  .Related_Content_Card_Bottom {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+  }
+  
+  
+  @media (min-width: 280px) and (max-width: 767px) {
+    .main_Header_Bottom {
+      display: none;
+    }
+  
+    .main_Mobile_Bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3vw;
+    }
+  
+    .mobile_Menu {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 10vw;
+    }
+  
+    .main_Header_Logo_Bottom {
+      font-size: 30px;
+    }
+  
+    .main_Header_Logo_Top {
+      font-size: 15px;
+    }
+  
+    .main_Header_Top {
+      justify-content: space-around;
+    }
+  
+    .featured_Articles_Component {
+      flex-direction: column;
+      gap: 2vw;
+    }
+  
+    .featured_Articles_Right {
+      gap: 2vw;
+    }
+  
+    .featured_Articles_Box_Big {
+      height: 40vw;
+      width: 80vw;
+    }
+  
+    .featured_Articles_Box_Small {
+      height: 40vw;
+      width: 80vw;
+    }
+  
+    .Box_Big_Title {
+      font-size: 25px;
+    }
+  
+    .Box_Small_Title {
+      font-size: 25px;
+    }
+  
+    .Box_Category_Date {
+      font-size: 15px;
+    }
+  
+    .AllSections_Bottom {
+      flex-direction: column-reverse;
+      gap: 5vw;
+    }
+  
+    .AllSections_Card {
+      width: 80vw;
+    }
+  
+    .AllSections_Header {
+      font-size: 30px;
+    }
+  
+    .AllSections_Image {
+      height: 35vw;
+      width: 70vw;
+    }
+  
+    .AllSections_Title {
+      font-size: 25px;
+    }
+  
+    .AllSections_BlogContent {
+      font-size: 15px;
+      text-align: justify;
+    }
+  
+    .AllSections_CategoryName {
+      font-size: 15px;
+    }
+  
+    .AllSections_PublishedDate {
+      font-size: 15px;
+    }
+  
+    .category1_Bottom {
+      flex-direction: column;
+      gap: 5vw;
+    }
+  
+    .category1_Card {
+      flex-direction: column;
+      width: 78vw;
+    }
+  
+    .category1_Image {
+      height: 37vw;
+      width: 78vw;
+    }
+  
+    .category1_Title {
+      font-size: 25px;
+    }
+  
+    .category1_BlogContent {
+      font-size: 15px;
+    }
+  
+    .category1_CategoryName {
+      font-size: 15px;
+    }
+  
+    .category1_PublishedDate {
+      font-size: 15px;
+    }
+  
+    .category1_Bottom_Left {
+      gap: 5vw;
+    }
+  
+    .category1_Bottom_Left1 {
+      padding-top: 1vw;
+      gap: 5vw;
+    }
+  
+    .category2_Card {
+      height: 35vw;
+    }
+  
+    .category2_Title {
+      font-size: 30px;
+    }
+  
+    .category2_NameAndDate {
+      font-size: 15px;
+    }
+  
+    .category1_Bottom_Right {
+      gap: 5vw;
+    }
+  
+    .advertisement {
+      width: 77vw;
+    }
+  
+    .cardPrimary_Image {
+      height: 30vw;
+      width: 60vw;
+    }
+  
+    .cardSecondary_Image {
+      height: 28vw;
+      width: 28vw;
+    }
+  
+    .LatestStories_Bottom {
+      gap: 5vw;
+      margin-bottom: 5vw;
+    }
+  
+    .LatestStories_CardContainer {
+      flex-direction: column;
+    }
+  
+    .LatestStories_Card {
+      width: 78vw;
+    }
+  
+    .CategoryPage_Main {
+      flex-direction: column;
+      gap: 5vw;
+    }
+  
+    .CategoryPage_Left_Bottom {
+      gap: 5vw;
+    }
+  
+    .CategoryPage_CardContainer {
+      gap: 5vw;
+      padding-top: 5vw;
+    }
+  
+    .CategoryPage_Right {
+      gap: 5vw;
+      margin-bottom: 5vw;
+    }
+  
+    .Article_Card {
+      margin-left: unset;
+      transform: unset;
+      gap: 5vw;
+    }
+  
+    .Article_Card_Top1 {
+      font-size: 30px;
+    }
+  
+    .Article_Card_Top2 {
+      flex-direction: column;
+      gap: 5vw;
+    }
+  
+    .Card_Top2_Right {
+      gap: 5vw;
+    }
+  
+    .Card_Top2_Left {
+      flex-direction: column;
+    }
+  
+    .Article_Image {
+      height: 38vw;
+      width: 76vw;
+    }
+  
+    .Article_Card_Bottom {
+      gap: 5vw;
+    }
+  s
+    .Related_Content_Image {
+      height: 39vw;
+      width: 78vw;
+    }
+  
+    .Related_Content_Top {
+      font-size: 30px;
+    }
+  
+    .Related_Content_Bottom {
+      flex-direction: column;
+      gap: 5vw;
+      padding-top: 5vw;
+      margin-bottom: 5vw;
+    }
+  }
