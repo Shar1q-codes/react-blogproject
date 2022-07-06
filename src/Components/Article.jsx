@@ -22,7 +22,7 @@ const Article = () => {
       <div className={styles.Article_Content}>
         {bollywood.map(
           (article, index) =>
-            article.id === articleId && (
+            article.id === articleId && article.CategoryName === articleCategory && (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -101,7 +101,7 @@ const Article = () => {
         )}
         {hollywood.map(
           (article, index) =>
-          article.id === articleId && (
+          article.id === articleId && article.CategoryName === articleCategory &&  (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -180,7 +180,7 @@ const Article = () => {
         )}
         {technology.map(
           (article, index) =>
-          article.id === articleId && (
+          article.id === articleId && article.CategoryName === articleCategory &&  (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -259,7 +259,7 @@ const Article = () => {
         )}
         {fitness.map(
           (article, index) =>
-          article.id === articleId && (
+          article.id === articleId && article.CategoryName === articleCategory && (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -338,7 +338,7 @@ const Article = () => {
         )}
         {food.map(
           (article, index) =>
-          article.id === articleId && (
+          article.id === articleId &&  article.CategoryName === articleCategory && (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
