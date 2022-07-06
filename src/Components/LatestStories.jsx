@@ -43,7 +43,7 @@ const LatestStories = () => {
                             if(index>=technology.length-1) {
                                 return(
                                     <div className={ styles.LatestStories_Card } key={index}>
-                                        <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
+                                        <NavLink to={`/article/${article.id}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
                                         <div className={ styles.AllSections_BlogContent }>{article.BlogContent}</div>
                                         <div>
                                             <span className={ styles.AllSections_CategoryName }>{article.CategoryName}</span>
@@ -59,7 +59,7 @@ const LatestStories = () => {
                             if(index>=fitness.length-1) {
                                 return(
                                     <div className={ styles.LatestStories_Card } key={index}>
-                                        <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
+                                        <NavLink to={`/article/${article.id}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
                                         <div className={ styles.AllSections_BlogContent }>{article.BlogContent}</div>
                                         <div>
                                             <span className={ styles.AllSections_CategoryName }>{article.CategoryName}</span>
@@ -75,7 +75,7 @@ const LatestStories = () => {
                             if(index>=food.length-1) {
                                 return(
                                     <div className={ styles.LatestStories_Card } key={index}>
-                                        <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
+                                        <NavLink to={`/article/${article.id}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
                                         <div className={ styles.AllSections_BlogContent }>{article.BlogContent}</div>
                                         <div>
                                             <span className={ styles.AllSections_CategoryName }>{article.CategoryName}</span>
@@ -91,7 +91,7 @@ const LatestStories = () => {
                             if(loadMore && index>=bollywood.length-1) {
                                 return(
                                     <div className={ styles.LatestStories_Card } key={index}>
-                                        <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
+                                        <NavLink to={`/article/${article.id}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
                                         <div className={ styles.AllSections_BlogContent }>{article.BlogContent}</div>
                                         <div>
                                             <span className={ styles.AllSections_CategoryName }>{article.CategoryName}</span>
@@ -107,7 +107,7 @@ const LatestStories = () => {
                             if(loadMore && index>=hollywood.length-1) {
                                 return(
                                     <div className={ styles.LatestStories_Card } key={index}>
-                                        <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
+                                        <NavLink to={`/article/${article.id}/${article.CategoryName}`} className={ styles.AllSections_Title }>{article.Title}</NavLink>
                                         <div className={ styles.AllSections_BlogContent }>{article.BlogContent}</div>
                                         <div>
                                             <span className={ styles.AllSections_CategoryName }>{article.CategoryName}</span>

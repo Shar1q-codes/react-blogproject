@@ -36,7 +36,7 @@ const LatestArticlesCategory1 = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -56,7 +56,7 @@ const LatestArticlesCategory1 = () => {
                       </div>
                     </div>
                   );
-                } else if (loadMore && index >= bollywood.length - 3) {
+                } else if (loadMore && index >= bollywood.length - 2) {
                   return (
                     <div key={index} className={styles.category1_Card}>
                       <div>
@@ -68,7 +68,7 @@ const LatestArticlesCategory1 = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -113,7 +113,7 @@ const LatestArticlesCategory1 = () => {
                     >
                       <div className={styles.category2_Child}>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category2_Title}
                         >
                           {article.Title}

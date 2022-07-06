@@ -17,6 +17,11 @@ const FeaturedArticlesComponent = () => {
           bollywood.map((article, index) => {
             if (index >= bollywood.length - 1) {
               return (
+                <NavLink
+                    to={`/article/${article.id}/${article.CategoryName}`}
+                    // className={styles.Box_Big_Title}
+                    style = {{color : 'black', textAlign: 'center'}}
+                  >
                 <div
                   key={index}
                   className={styles.featured_Articles_Box_Big}
@@ -27,18 +32,16 @@ const FeaturedArticlesComponent = () => {
                     backgroundRepeat: 'no-repeat',
                   }}
                 >
-                  <NavLink
-                    to={`/article/${article.Title}/${article.CategoryName}`}
-                    className={styles.Box_Big_Title}
-                  >
+                  
                     {article.Title}
-                  </NavLink>
+                  
                   <div className={styles.Box_Category_Date}>
                     <span>{article.CategoryName}</span>
                     <span> / </span>
                     <span>{article.PublishedDate}</span>
                   </div>
                 </div>
+                </NavLink>
               );
             }
           })
@@ -51,6 +54,10 @@ const FeaturedArticlesComponent = () => {
             hollywood.map((article, index) => {
               if (index >= hollywood.length - 1) {
                 return (
+                  <NavLink
+                      to={`/article/${article.id}/${article.CategoryName}`}
+                      // className={styles.Box_Small_Title}
+                    >
                   <div
                     key={index}
                     className={styles.featured_Articles_Box_Small}
@@ -61,18 +68,16 @@ const FeaturedArticlesComponent = () => {
                       backgroundRepeat: 'no-repeat',
                     }}
                   >
-                    <NavLink
-                      to={`/article/${article.Title}/${article.CategoryName}`}
-                      className={styles.Box_Small_Title}
-                    >
+                    
                       {article.Title}
-                    </NavLink>
+                    
                     <div className={styles.Box_Category_Date}>
                       <span>{article.CategoryName}</span>
                       <span> / </span>
                       <span>{article.PublishedDate}</span>
                     </div>
                   </div>
+                  </NavLink>
                 );
               }
             })
@@ -84,6 +89,10 @@ const FeaturedArticlesComponent = () => {
             technology.map((article, index) => {
               if (index >= technology.length - 1) {
                 return (
+                  <NavLink
+                      to={`/article/${article.id}/${article.CategoryName}`}
+                      // className={styles.Box_Small_Title}
+                    >
                   <div
                     key={index}
                     className={styles.featured_Articles_Box_Small}
@@ -96,12 +105,9 @@ const FeaturedArticlesComponent = () => {
                       backgroundRepeat: 'no-repeat',
                     }}
                   >
-                    <NavLink
-                      to={`/article/${article.Title}/${article.CategoryName}`}
-                      className={styles.Box_Small_Title}
-                    >
+                    
                       {technology[technology.length - 1].Title}
-                    </NavLink>
+                    
                     <div className={styles.Box_Category_Date}>
                       <span>
                         {technology[technology.length - 1].CategoryName}
@@ -112,6 +118,7 @@ const FeaturedArticlesComponent = () => {
                       </span>
                     </div>
                   </div>
+                  </NavLink>
                 );
               }
             })

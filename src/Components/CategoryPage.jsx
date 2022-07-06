@@ -61,7 +61,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -97,7 +97,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -139,7 +139,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -175,7 +175,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -217,7 +217,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -253,7 +253,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -295,7 +295,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -331,7 +331,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -373,7 +373,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}
@@ -409,7 +409,7 @@ const CategoryPage = () => {
                       </div>
                       <div>
                         <NavLink
-                          to={`/article/${article.Title}/${article.CategoryName}`}
+                          to={`/article/${article.id}/${article.CategoryName}`}
                           className={styles.category1_Title}
                         >
                           {article.Title}

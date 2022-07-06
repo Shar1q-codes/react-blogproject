@@ -4,7 +4,7 @@ import { BlogContext } from './BlogContext';
 import styles from '../AppStyles.module.css';
 
 const Article = () => {
-  const { articleTitle, articleCategory } = useParams();
+  const { articleId, articleCategory } = useParams();
 
   const { value1, value2, value3, value4, value5 } = useContext(BlogContext);
   const [bollywood] = value1;
@@ -22,7 +22,7 @@ const Article = () => {
       <div className={styles.Article_Content}>
         {bollywood.map(
           (article, index) =>
-            article.Title === articleTitle && (
+            article.id === articleId && (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -101,7 +101,7 @@ const Article = () => {
         )}
         {hollywood.map(
           (article, index) =>
-            article.Title === articleTitle && (
+          article.id === articleId && (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -180,7 +180,7 @@ const Article = () => {
         )}
         {technology.map(
           (article, index) =>
-            article.Title === articleTitle && (
+          article.id === articleId && (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -259,7 +259,7 @@ const Article = () => {
         )}
         {fitness.map(
           (article, index) =>
-            article.Title === articleTitle && (
+          article.id === articleId && (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -338,7 +338,7 @@ const Article = () => {
         )}
         {food.map(
           (article, index) =>
-            article.Title === articleTitle && (
+          article.id === articleId && (
               <div key={index} className={styles.Article_Card}>
                 <div className={styles.Article_Card_Top}>
                   <div className={styles.Article_Card_Top1}>
@@ -425,7 +425,7 @@ const Article = () => {
               if (
                 article.CategoryName === articleCategory &&
                 index >= bollywood.length - 5 &&
-                article.Title !== articleTitle
+                article.id !== articleId
               ) {
                 return (
                   <div key={index} className={styles.Related_Content_Card}>
@@ -437,7 +437,7 @@ const Article = () => {
                       />
                     </div>
                     <NavLink
-                      to={`/article/${article.Title}/${article.CategoryName}`}
+                      to={`/article/${article.id}/${article.CategoryName}`}
                       className={styles.AllSections_Title}
                     >
                       {article.Title}
@@ -466,7 +466,7 @@ const Article = () => {
               if (
                 article.CategoryName === articleCategory &&
                 index >= hollywood.length - 5 &&
-                article.Title !== articleTitle
+                article.id !== articleId
               ) {
                 return (
                   <div key={index} className={styles.Related_Content_Card}>
@@ -478,7 +478,7 @@ const Article = () => {
                       />
                     </div>
                     <NavLink
-                      to={`/article/${article.Title}/${article.CategoryName}`}
+                      to={`/article/${article.id}/${article.CategoryName}`}
                       className={styles.AllSections_Title}
                     >
                       {article.Title}
@@ -507,7 +507,7 @@ const Article = () => {
               if (
                 article.CategoryName === articleCategory &&
                 index >= technology.length - 5 &&
-                article.Title !== articleTitle
+                article.id !== articleId
               ) {
                 return (
                   <div key={index} className={styles.Related_Content_Card}>
@@ -519,7 +519,7 @@ const Article = () => {
                       />
                     </div>
                     <NavLink
-                      to={`/article/${article.Title}/${article.CategoryName}`}
+                      to={`/article/${article.id}/${article.CategoryName}`}
                       className={styles.AllSections_Title}
                     >
                       {article.Title}
@@ -548,7 +548,7 @@ const Article = () => {
               if (
                 article.CategoryName === articleCategory &&
                 index >= fitness.length - 5 &&
-                article.Title !== articleTitle
+                article.id !== articleId
               ) {
                 return (
                   <div key={index} className={styles.Related_Content_Card}>
@@ -560,7 +560,7 @@ const Article = () => {
                       />
                     </div>
                     <NavLink
-                      to={`/article/${article.Title}/${article.CategoryName}`}
+                      to={`/article/${article.id}/${article.CategoryName}`}
                       className={styles.AllSections_Title}
                     >
                       {article.Title}
@@ -589,7 +589,7 @@ const Article = () => {
               if (
                 article.CategoryName === articleCategory &&
                 index >= food.length - 5 &&
-                article.Title !== articleTitle
+               article.id !== articleId
               ) {
                 return (
                   <div key={index} className={styles.Related_Content_Card}>
@@ -601,7 +601,7 @@ const Article = () => {
                       />
                     </div>
                     <NavLink
-                      to={`/article/${article.Title}/${article.CategoryName}`}
+                      to={`/article/${article.id}/${article.CategoryName}`}
                       className={styles.AllSections_Title}
                     >
                       {article.Title}

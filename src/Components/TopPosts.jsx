@@ -45,7 +45,7 @@ const TopPosts = () => {
                                     <div className={styles.cardPrimary_Top}><img className={styles.cardPrimary_Image} src={ object.ImageAsset } alt="From the article" /></div>
                                     <div className={styles.cardPrimary_Bottom}>
                                         <div className={styles.cardPrimary_Bottom1}>
-                                            <NavLink to={`/article/${object.Title}/${object.CategoryName}`} className={ styles.category1_Title }>{ object.Title }</NavLink>
+                                            <NavLink to={`/article/${object.id}/${object.CategoryName}`} className={ styles.category1_Title }>{ object.Title }</NavLink>
                                             <div>
                                                 <span className={ styles.category1_CategoryName }>{ object.CategoryName }</span>
                                                 <span className={ styles.category1_PublishedDate }> / { object.PublishedDate }</span>
@@ -63,7 +63,7 @@ const TopPosts = () => {
                                     <div className={styles.cardSecondary_Left}><img className={styles.cardSecondary_Image} src={ object.ImageAsset } alt="From the article" /></div>
                                     <div className={styles.cardSecondary_Right}>
                                         <div className={styles.cardSecondary_Right1}>
-                                            <NavLink to={`/article/${object.Title}/${object.CategoryName}`} className={ styles.cardSecondary_Title }>{ object.Title }</NavLink>
+                                            <NavLink to={`/article/${object.id}/${object.CategoryName}`} className={ styles.cardSecondary_Title }>{ object.Title }</NavLink>
                                             <div>
                                                 <span className={ styles.cardSecondary_CategoryName }>{ object.CategoryName }</span>
                                                 <span className={ styles.cardSecondary_PublishedDate }> / { object.PublishedDate }</span>

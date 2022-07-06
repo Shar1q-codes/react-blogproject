@@ -24,7 +24,7 @@ const LatestArticlesAllSections = () => {
                                 <div key={index} className={styles.AllSections_Card}>
                                     <div><img className={styles.AllSections_Image} src={  article.ImageAsset  } alt="From The Article"/></div>
                                     <div>
-                                        <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={styles.AllSections_Title}>{  article.Title  }</NavLink>
+                                        <NavLink to={`/article/${article.id}/${article.CategoryName}`} className={styles.AllSections_Title}>{  article.Title  }</NavLink>
                                         <div className={styles.AllSections_BlogContent}>{  article.BlogContent  }</div>
                                     </div>
                                     <div>
@@ -44,7 +44,7 @@ const LatestArticlesAllSections = () => {
                                 <div key={index} className={styles.AllSections_Card}>
                                     <div><img className={styles.AllSections_Image} src={  article.ImageAsset  } alt="From The Article"/></div>
                                     <div>
-                                        <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={styles.AllSections_Title}>{  article.Title  }</NavLink>
+                                        <NavLink to={`/article/${article.id}/${article.CategoryName}`} className={styles.AllSections_Title}>{  article.Title  }</NavLink>
                                         <div className={styles.AllSections_BlogContent}>{  article.BlogContent  }</div>
                                     </div>
                                     <div>
@@ -64,7 +64,7 @@ const LatestArticlesAllSections = () => {
                                 <div key={index} className={styles.AllSections_Card}>
                                     <div><img className={styles.AllSections_Image} src={  article.ImageAsset  } alt="From The Article"/></div>
                                     <div>
-                                        <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={styles.AllSections_Title}>{  article.Title  }</NavLink>
+                                        <NavLink to={`/article/${article.id}/${article.CategoryName}`} className={styles.AllSections_Title}>{  article.Title  }</NavLink>
                                         <div className={styles.AllSections_BlogContent}>{  article.BlogContent  }</div>
                                     </div>
                                     <div>

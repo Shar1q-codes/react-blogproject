@@ -1,4 +1,4 @@
-
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -31,7 +31,7 @@ function App() {
           <Route path='/' element={<Navigate to={'/home'} />} />
           <Route path='/home' element={<Home />} />
           <Route
-            path='/article/:articleTitle/:articleCategory'
+            path='/article/:articleId/:articleCategory'
             element={<Article />}
           />
           <Route
